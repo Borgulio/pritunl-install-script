@@ -39,5 +39,9 @@ systemctl stop firewalld
 systemctl disable firewalld
 
 IP=$(wget -4qO- "http://whatismyip.akamai.com/")
+echo ''
+echo ''
 echo "Далее переходим в браузере по ссылке https://$IP и завершаем установку следуя инструкции"
+echo 'Должен быть открыт 443 порт, позже можно будет сменить'
+echo
 read -n1 -r -p "Нажмите любую кнопку для продолжения..."
